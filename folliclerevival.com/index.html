@@ -24,13 +24,13 @@
 			
 			<script type="text/javascript">
 				console.log('speed Optimization by https://speedup.guru');
-				console.log('engine ver 1.008');
+				console.log('engine ver 1.009');
 
 				engine = {};
 				const queue = new IdleQueue();
 				const queue_tracks = new IdleQueue({ensureTasksRun: true});
 				engine.mode = window.isMobile() ? 'mobile' : 'desktop';
-				engine.mobile = {'scripts': 2400, 'other': 3500};
+				engine.mobile = {'scripts': 1000, 'other': 2500};
 				engine.desktop = {'scripts': 500, 'other': 1850};
 				engine.license = 'c3BlZWR1cGd1cnUuZ2l0aHViLmlvZ3RndGNMQTNA';
 
