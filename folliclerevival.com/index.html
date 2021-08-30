@@ -23,7 +23,7 @@
 			
 			<script type="text/javascript">
 				console.log('speed Optimization by https://speedup.guru');
-				console.log('engine ver 1.004');
+				console.log('engine ver 1.005');
 
 				engine = {};
 				engine.mode = window.isMobile() ? 'mobile' : 'desktop';
@@ -59,9 +59,11 @@
 
 				engine.scripts = function()
 				{
-					engine.trustedbadge();
-					engine.digistore();
-					loadJS('js/app-id=a5d2a03ff186afa79e79.js');
+					loadJS('js/app-id=a5d2a03ff186afa79e79.js', function()
+					{
+						engine.trustedbadge();
+						engine.digistore();
+					});
 				}
 
 				engine.other = function()
