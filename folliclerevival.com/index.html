@@ -24,7 +24,7 @@
 			
 			<script type="text/javascript">
 				console.log('speed Optimization by https://speedup.guru');
-				console.log('engine ver 1.007');
+				console.log('engine ver 1.008');
 
 				engine = {};
 				const queue = new IdleQueue();
@@ -80,7 +80,7 @@
 
 				engine.other = function()
 				{
-					queue.queue_tracks(() => {
+					queue_tracks.pushTask(() => {
 						engine.gtm();
 					});
 				}
