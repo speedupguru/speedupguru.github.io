@@ -169,3 +169,30 @@
 	color: #971f33 !important;
 	border-color: #971f33 !important;
 }
+#logo img
+{
+	height: 50px !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	#logo
+	{
+		margin-top:12px !important;
+	}
+	#logo img
+	{
+		height: 100% !important;
+	}
+	.header-misc
+	{
+		width: 85% !important;
+	}
+	.header-misc a 
+	{
+		margin-left: 55px;
+	}
+	#primary-menu-trigger
+	{
+		width: 10% !important;
+	}
+}
